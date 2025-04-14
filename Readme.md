@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Влада Непомилуева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2588685).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
