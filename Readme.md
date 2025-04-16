@@ -2,7 +2,7 @@
 
 * Студент: [Влада Непомилуева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2588685).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
-
+* Сайт: [Мой проект седона](https://averoslyn.github.io/2588685-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
