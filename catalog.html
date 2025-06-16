@@ -28,11 +28,13 @@
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-link-search" href="#">
+                <svg class="navigation-search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/></svg>
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-link-favorite" href="#">
+                <svg class="navigation-favorite-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
                 <span class="visually-hidden">Избранное.</span>
                 <span class="notification-badge">12</span>
               </a>
@@ -47,6 +49,10 @@
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
+                </svg>
                 <span class="visually-hidden">Главная.</span>
               </a>
             </li>
@@ -105,12 +111,16 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость,&nbsp;₽:</legend>
-                <label class="filter-range-control"> <span class="filter-range-label">От</span>
-                  <input class="filter-range-input" type="number" name="min-interval" value="0">
-                </label>
-                <label class="filter-range-control"> <span class="filter-range-label">До</span>
-                  <input class="filter-range-input" type="number" name="max-interval" value="9000">
-                </label>
+                <div class="filter-range-wrapper">
+                  <label class="filter-range-control">
+                    <input class="filter-range-input" type="number" name="min-interval" value="0">
+                    <span class="filter-range-label">От</span>
+                  </label>
+                  <label class="filter-range-control">
+                    <input class="filter-range-input" type="number" name="max-interval" value="9000">
+                    <span class="filter-range-label">До</span>
+                  </label>
+                </div>
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Управление нижней границы стоимости.</span>
                 </button>
@@ -270,16 +280,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" fill="none"><path fill-rule="evenodd" d="M24 1c.1-.6 0-1-.8-1h-2.7c-.6 0-1 .3-1.1.7C19.4.7 18 4 16.2 6c-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7V.9c0-.6-.2-.9-.7-.9H9.7c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V7c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9C4.9.3 4.7 0 4 0H1.4C.6 0 .5.3.5.7c0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7C19.6 13.2 20 14 21 14h2.6c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L20.4 8c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z" clip-rule="evenodd"/></svg>
               <span class="visually-hidden">Вконтакте.</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" fill="none"><path d="m17.3.1-16 6.1c-1 .5-1 1-.2 1.4l4.1 1.2 9.5-6c.5-.2.9 0 .5.2l-7.6 7-.3 4.2c.4 0 .6-.2.8-.4l2-2 4.1 3c.8.5 1.3.3 1.5-.6l2.7-12.8C18.7.3 18-.2 17.3 0Z"/></svg>
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"><path d="M19.1.5H3.7C1.8.5.5 2.1.5 3.9v10c0 2 1.3 3.6 3.2 3.6h15.6c1.7 0 3.2-1.6 3.2-3.4V3.9C22.3 2.1 21 .5 19.1.5ZM8.1 13V5l7.4 4-7.3 4Z"/></svg>
               <span class="visually-hidden">YouTube.</span>
             </a>
           </li>
