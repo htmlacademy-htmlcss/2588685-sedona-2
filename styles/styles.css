@@ -389,7 +389,6 @@ body {
 }
 
 .advantages-description {
-  width: 230px;
   margin: 0;
 
   color: #333333;
@@ -610,7 +609,9 @@ body {
 .footer-social-list {
   display: grid;
   grid-template-columns: repeat(3, 47px);
+  row-gap: 10px;
   justify-items: center;
+  align-items: end;
   width: 142px;
   margin: 0;
   padding: 0;
@@ -638,7 +639,9 @@ body {
 }
 
 .footer-phone {
-  width: 331px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   font-size: 40px;
   line-height: 40px;
@@ -938,6 +941,7 @@ body {
 
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
+  -moz-appearance: textfield;
 }
 
 .filter-range-input:hover {
@@ -958,10 +962,6 @@ body {
   margin: 0;
 
   appearance: none;
-}
-
-.filter-range-input {
-  -moz-appearance: textfield;
 }
 
 .range-scale {
@@ -1075,11 +1075,11 @@ body {
 }
 
 .select-control {
-  min-width: 292px;
+  width: 292px;
   height: 49px;
   margin-right: 71px;
   margin-left: 90px;
-  padding: 0 20px;
+  padding: 0 34px 0 20px;
   border: 2px solid #e5e5e5;
   align-self: center;
 
@@ -1443,6 +1443,8 @@ body {
   position: relative;
 
   width: 717px;
+  max-height: 100vh;
+  overflow-y: auto;
   margin: auto;
   padding: 64px 70px;
 
@@ -1515,7 +1517,6 @@ body {
 }
 
 .modal-input-label {
-  min-width: 137px;
   align-self: center;
 
   font-family: inherit;
@@ -1528,7 +1529,7 @@ body {
 .modal-input {
   width: 440px;
   height: 48px;
-  padding: 0 20px;
+  padding: 0 50px 0 20px;
   border: none;
 
   font-family: inherit;
@@ -1618,6 +1619,10 @@ body {
   opacity: 1;
 }
 
+.button-input:focus {
+  outline: none;
+}
+
 .button-input:focus::before {
   content: "";
   position: absolute;
@@ -1675,6 +1680,7 @@ body {
   text-align: center;
 
   background-color: #f2f2f2;
+  -moz-appearance: textfield;
 }
 
 .number-age::-webkit-outer-spin-button,
@@ -1682,10 +1688,6 @@ body {
   margin: 0;
 
   appearance: none;
-}
-
-.number-age {
-  -moz-appearance: textfield;
 }
 
 .number-age:hover {
